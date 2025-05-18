@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  mysql:
+    image: mysql:9.2.0
+    container_name: pugliale-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    networks:
+      - pugliale
+
+  dbmgmt:
+    image: adminer:5.2.1
+    container_name: pugliale-dbmgmt
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      ADMINER_DEFAULT_SERVER: pugliale-mysql
+    networks:
+      - pugliale
+
+networks:
+  pugliale:
+    driver: bridge
