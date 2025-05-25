@@ -80,9 +80,9 @@ docker pull mysql
 docker pull adminer
 ```
 
-<img src="Images/Bild1.png" width="600">
-<img src="Images/Bild2.png" width="600">
-<img src="Images/Bild3.png" width="600">
+<img src="images/Bild1.png" width="600">
+<img src="images/Bild2.png" width="600">
+<img src="images/Bild3.png" width="600">
 
 ### ⚙️ Setup MySQL Container
 
@@ -97,8 +97,8 @@ Ein erster MySQL-Container wurde manuell über die CLI gestartet. Wichtige Param
 docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql
 ```
 
-<img src="Images/Bild5.png" width="600">
-<img src="Images/Bild6.png" width="600">
+<img src="images/Bild5.png" width="600">
+<img src="images/Bild6.png" width="600">
 
 ### 🖥️ Adminer starten und verbinden
 
@@ -110,9 +110,9 @@ docker run --name adminer-container -p 8080:8080 -d adminer
 
 Die Oberfläche war via `http://localhost:8080` erreichbar. Verbindung zu MySQL erfolgte über `localhost`, Benutzer `root`, Passwort `root`.
 
-<img src="Images/Bild7.png" width="600">
-<img src="Images/Bild8.png" width="600">
-<img src="Images/Bild9.png" width="600">
+<img src="images/Bild7.png" width="600">
+<img src="images/Bild8.png" width="600">
+<img src="images/Bild9.png" width="600">
 
 ### 🗄️ Datenbank und Tabelle anlegen
 
@@ -122,9 +122,9 @@ In Adminer wurde über die Weboberfläche:
 
 Die Eingaben wurden korrekt gespeichert und dargestellt.
 
-<img src="Images/Bild10.png" width="600">
-<img src="Images/Bild11.png" width="600">
-<img src="Images/Bild12.png" width="600">
+<img src="images/Bild10.png" width="600">
+<img src="images/Bild11.png" width="600">
+<img src="images/Bild12.png" width="600">
 
 ---
 
@@ -161,8 +161,8 @@ docker-compose up -d
 
 Mit diesem Befehl wurden beide Container automatisch erstellt und gestartet. Die Verbindung und Datenbankstruktur funktionierte weiterhin wie zuvor, allerdings war das Setup jetzt reproduzierbar und deutlich einfacher zu verwalten.
 
-<img src="Images/Bild13.png" width="600">
-<img src="Images/Bild14.png" width="600">
+<img src="images/Bild13.png" width="600">
+<img src="images/Bild14.png" width="600">
 
 ---
 
